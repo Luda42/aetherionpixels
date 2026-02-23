@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AetherionPixels | Pixel Art from the Space Between Dreams</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1025 50%, #0f0a1a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .container { max-width: 800px; text-align: center; }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #8b5cf6, #d946ef, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            color: #a78bfa;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        .description {
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #c4b5fd;
+        }
+        .links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .link {
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+        }
+        .pixel-border {
+            border: 4px solid #7c3aed;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .pixel-border::before {
+            content: '';
+            position: absolute;
+            top: -8px; left: -8px; right: -8px; bottom: -8px;
+            border: 2px solid #a855f7;
+            pointer-events: none;
+        }
+        footer {
+            margin-top: auto;
+            padding-top: 2rem;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">AetherionPixels</h1>
+        <p class="tagline">Pixel worlds from the space between dreams and code</p>
+        
+        <div class="pixel-border">
+            <p class="description">
+                Cosmic landscapes, fantasy realms, and retro-futuristic scenes — 
+                each piece crafted one pixel at a time. Inspired by the liminal spaces 
+                between gaming nostalgia and infinite possibility.
+            </p>
+            <p class="description">
+                Part of the Aetherion creative universe.
+            </p>
+        </div>
+        
+        <div class="links">
+            <a href="https://www.redbubble.com/people/AetherionPixels/shop" class="link">🛒 Shop on Redbubble</a>
+        </div>
+    </div>
+    
+    <footer>
+        © 2026 AetherionPixels — Welcome to the Aetherion
+    </footer>
+</body>
+</html>
